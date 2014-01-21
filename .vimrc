@@ -10,3 +10,4 @@ runtime! custom_config/*.vim
 autocmd Filetype gitcommit setlocal spell textwidth=72
 
 color base16-tomorrow
+let g:airline_powerline_fonts=1

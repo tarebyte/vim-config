@@ -27,7 +27,7 @@
   endif
 
 " use a big, pretty font
-  set guifont=Monaco:h15
+  set guifont=Inconsolata\ for\ Powerline:h17
 
 " initial window size
   set lines=45 columns=120
@@ -36,4 +36,5 @@
   set background=dark
   colors base16-tomorrow
 
+let g:airline_powerline_fonts=1
 runtime! custom_config/*.gvim
