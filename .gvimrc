@@ -34,7 +34,8 @@
 
 " pretty but not terminal-compatible color scheme
   set background=dark
-  colors base16-tomorrow
+  "colors molokai
+  let g:rehash256 = 1
 
 let g:airline_powerline_fonts=1
 runtime! custom_config/*.gvim

@@ -6,6 +6,7 @@
 
 " default color scheme
   set background=dark
+  color molokai
 
 " don't wrap long lines
   set nowrap
