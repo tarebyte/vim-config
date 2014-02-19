@@ -34,7 +34,7 @@
 
 " pretty but not terminal-compatible color scheme
   set background=dark
-  "colors molokai
+  colors base16-tomorrow
   let g:rehash256 = 1
 
 let g:airline_powerline_fonts=1
