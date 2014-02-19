@@ -1,3 +1,6 @@
+" Remap leader to ,
+let mapleader=","
+
 " get out of insert mode with cmd-i
   imap <D-i> <Esc>
 
