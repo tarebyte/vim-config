@@ -82,16 +82,6 @@
     au BufNewFile,BufRead *.coffee set filetype=coffee
 
 
-" ACK
-" Bundle "git://github.com/mileszs/ack.vim.git"
-"   nmap g/ :Ack!<space>
-"   nmap g* :Ack! -w <C-R><C-W><space>
-"   nmap ga :AckAdd!<space>
-"   nmap gn :cnext<CR>
-"   nmap gp :cprev<CR>
-"   nmap gq :ccl<CR>
-"   nmap gl :cwindow<CR>
-
 " AG aka The Silver Searcher
   Bundle 'git://github.com/rking/ag.vim.git'
     nmap g/ :Ag!<space>
