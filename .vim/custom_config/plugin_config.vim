@@ -31,3 +31,6 @@ nmap <Leader>rc :wa<CR> :call RunCurrentSpecFile()<CR>
 nmap <Leader>rn :wa<CR> :call RunNearestSpec()<CR>
 nmap <Leader>rl :wa<CR> :call RunLastSpec()<CR>
 nmap <Leader>ra :wa<CR> :call RunAllSpecs()<CR>
+
+Bundle 'Lokaltog/vim-easymotion'
+map <Leader> <Plug>(easymotion-prefix)
