@@ -34,3 +34,5 @@ nmap <Leader>ra :wa<CR> :call RunAllSpecs()<CR>
 
 Bundle 'Lokaltog/vim-easymotion'
 map <Leader> <Plug>(easymotion-prefix)
+
+Bundle 'edkolev/tmuxline.vim'
