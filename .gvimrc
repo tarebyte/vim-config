@@ -34,7 +34,7 @@
 
 " pretty but not terminal-compatible color scheme
   set background=dark
-  colors lavalamp
+  colors solarized
   let g:rehash256 = 1
 
 let g:airline_powerline_fonts=1

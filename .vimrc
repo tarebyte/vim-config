@@ -11,3 +11,4 @@ autocmd Filetype gitcommit setlocal spell textwidth=72
 
 colors solarized
 let g:airline_powerline_fonts=1
+nmap <C-W>! <Plug>Kwbd
