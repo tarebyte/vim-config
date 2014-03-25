@@ -36,3 +36,5 @@ Bundle 'Lokaltog/vim-easymotion'
 map <Leader> <Plug>(easymotion-prefix)
 
 Bundle 'edkolev/tmuxline.vim'
+Bundle 'rodjek/vim-puppet'
+  au BufNewFile,BufRead *.pp set filetype=puppet
