@@ -35,6 +35,9 @@ nmap <Leader>ra :wa<CR> :call RunAllSpecs()<CR>
 Bundle 'Lokaltog/vim-easymotion'
 map <Leader> <Plug>(easymotion-prefix)
 
-Bundle 'edkolev/tmuxline.vim'
+" Bundle 'edkolev/tmuxline.vim'
 Bundle 'rodjek/vim-puppet'
   au BufNewFile,BufRead *.pp set filetype=puppet
+
+Bundle 'vim-perl/vim-perl'
+Bundle 'Slava/vim-colors-tomorrow'
