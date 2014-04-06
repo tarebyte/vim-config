@@ -1,3 +1,0 @@
-[submodule ".vim/colors/lavalamp"]
-	path = .vim/colors/lavalamp
-	url = git@github.com:jasonlong/lavalamp.git
