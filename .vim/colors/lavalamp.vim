@@ -1,1 +1,1 @@
-lavalamp/vim/lavalamp.vim
+/Users/mark/src/jasonlong/lavalamp/vim/lavalamp.vim

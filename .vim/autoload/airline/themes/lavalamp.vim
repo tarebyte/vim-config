@@ -1,1 +1,0 @@
-../../../colors/lavalamp/vim/autoload/airline/themes/lavalamp.vim
