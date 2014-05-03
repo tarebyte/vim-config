@@ -26,11 +26,11 @@
   Bundle "git://github.com/wavded/vim-stylus.git"
   Bundle "git@github.com:tpope/vim-abolish.git"
 
-" Dash Searching"
-  Bundle "git@github.com:rizzatti/funcoo.vim.git"
-  Bundle "git@github.com:rizzatti/dash.vim.git"
-    nmap <Leader>qs <Plug>DashSearch
-    nmap <Leader>qa <Plug>DashGlobalSearch
+" " Dash Searching"
+"   Bundle "git@github.com:rizzatti/funcoo.vim.git"
+"   Bundle "git@github.com:rizzatti/dash.vim.git"
+"     nmap <Leader>qs <Plug>DashSearch
+"     nmap <Leader>qa <Plug>DashGlobalSearch
 
 
 " CtrlP - with FuzzyFinder compatible keymaps
