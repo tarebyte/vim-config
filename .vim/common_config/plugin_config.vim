@@ -2,38 +2,32 @@
 " install plugins.
 
 " Plugins requiring no additional configuration or keymaps
-  Bundle "git://github.com/oscarh/vimerl.git"
-  Bundle "git://github.com/tpope/vim-git.git"
-  Bundle "git://github.com/harleypig/vcscommand.vim.git"
-  Bundle "git://github.com/altercation/vim-colors-solarized.git"
-  Bundle "git://github.com/tpope/vim-cucumber.git"
-  Bundle "git://github.com/tpope/vim-endwise.git"
-  Bundle "git://github.com/tpope/vim-fugitive.git"
-  Bundle "git://github.com/tpope/vim-haml.git"
-  Bundle "git://github.com/pangloss/vim-javascript.git"
-  Bundle "git://github.com/vim-scripts/L9.git"
-  Bundle "git://github.com/tpope/vim-rake.git"
-  Bundle "git://github.com/vim-ruby/vim-ruby.git"
-  Bundle "git://github.com/ervandew/supertab.git"
-  Bundle "git://github.com/tomtom/tcomment_vim.git"
-  Bundle "git://github.com/michaeljsmith/vim-indent-object.git"
-  " Bundle "git://github.com/tsaleh/vim-matchit.git"
-  Bundle "git://github.com/kana/vim-textobj-user.git"
-  Bundle "git://github.com/nelstrom/vim-textobj-rubyblock.git"
-  Bundle "git://github.com/tpope/vim-repeat.git"
-  Bundle "git://github.com/vim-scripts/ruby-matchit.git"
-  Bundle "git://github.com/wgibbs/vim-irblack.git"
-  Bundle "git@github.com:tpope/vim-abolish.git"
+  Bundle "altercation/vim-colors-solarized"
+  Bundle "tpope/vim-cucumber"
+  Bundle "tpope/vim-endwise"
+  Bundle "tpope/vim-fugitive"
+  Bundle "tpope/vim-haml"
+  Bundle "vim-scripts/L9"
+  Bundle "tpope/vim-rake"
+  Bundle "vim-ruby/vim-ruby"
+  Bundle "ervandew/supertab"
+  Bundle "tomtom/tcomment_vim"
+  Bundle "michaeljsmith/vim-indent-object"
+  Bundle "kana/vim-textobj-user"
+  Bundle "nelstrom/vim-textobj-rubyblock"
+  Bundle "tpope/vim-repeat"
+  Bundle "vim-scripts/ruby-matchit"
+  Bundle "tpope/vim-abolish"
+  Bundle 'klen/python-mode'
+  Bundle 'bling/vim-airline'
+  Bundle 'vim-perl/vim-perl'
 
-" " Dash Searching"
-"   Bundle "git@github.com:rizzatti/funcoo.vim.git"
-"   Bundle "git@github.com:rizzatti/dash.vim.git"
-"     nmap <Leader>qs <Plug>DashSearch
-"     nmap <Leader>qa <Plug>DashGlobalSearch
-
+" Javascript
+Bundle "pangloss/vim-javascript"
+au BufNewFile,BufRead *.es6 set filetype=javascript
 
 " CtrlP - with FuzzyFinder compatible keymaps
-  Bundle "git://github.com/kien/ctrlp.vim.git"
+  Bundle "kien/ctrlp.vim"
     nnoremap <Leader>b :<C-U>CtrlPBuffer<CR>
     nnoremap <Leader>t :<C-U>CtrlP<CR>
     nnoremap <Leader>T :<C-U>CtrlPTag<CR>
@@ -46,43 +40,37 @@
     " respect the .gitignore
     let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . --cached --exclude-standard --others']
 
-" Compile and deploy Arduino (*.pde) sketches directly from Vim
-  Bundle "git://github.com/smerrill/vim-arduino.git"
-    au BufNewFile,BufRead *.pde set filetype=arduino
-    au BufNewFile,BufRead *.ino set filetype=arduino
-
 " Go
-  Bundle "git://github.com/jnwhiteh/vim-golang.git"
+  Bundle "jnwhiteh/vim-golang"
     au BufNewFile,BufRead *.go set filetype=go
 
 " Mustache
-  Bundle "git://github.com/juvenn/mustache.vim.git"
+  Bundle "juvenn/mustache.vim"
     " Copied from the plugin; not sure why it isn't working normally
     au BufNewFile,BufRead *.mustache,*.handlebars,*.hbs set filetype=mustache
 
 " Slim
-  Bundle "git://github.com/slim-template/vim-slim.git"
+  Bundle "slim-template/vim-slim"
     au BufNewFile,BufRead *.slim set filetype=slim
 
 " Less
-  Bundle "git://github.com/groenewege/vim-less.git"
+  Bundle "groenewege/vim-less"
     au BufNewFile,BufRead *.less set filetype=less
 
 " Handlebars
-  Bundle "git://github.com/nono/vim-handlebars.git"
+  Bundle "nono/vim-handlebars"
     au BufNewFile,BufRead *.hbs set filetype=handlebars
 
 " Stylus
-  Bundle "git://github.com/wavded/vim-stylus.git"
+  Bundle "wavded/vim-stylus"
     au BufNewFile,BufRead *.styl set filetype=stylus
 
 " Coffee script
-  Bundle "git://github.com/kchmck/vim-coffee-script.git"
+  Bundle "kchmck/vim-coffee-script"
     au BufNewFile,BufRead *.coffee set filetype=coffee
 
-
 " AG aka The Silver Searcher
-  Bundle 'git://github.com/rking/ag.vim.git'
+  Bundle 'rking/ag.vim'
     nmap g/ :Ag!<space>
     nmap g* :Ag! -w <C-R><C-W><space>
     nmap ga :AgAdd!<space>
@@ -93,27 +81,21 @@
 
 
 " Tagbar for navigation by tags using CTags
-  Bundle "git://github.com/majutsushi/tagbar.git"
+  Bundle "majutsushi/tagbar"
     let g:tagbar_autofocus = 1
     map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
     map <Leader>. :TagbarToggle<CR>
 
 " Markdown syntax highlighting
-  Bundle "git://github.com/tpope/vim-markdown.git"
+  Bundle "tpope/vim-markdown"
     augroup mkd
       autocmd BufNewFile,BufRead *.mkd      set ai formatoptions=tcroqn2 comments=n:> filetype=markdown
       autocmd BufNewFile,BufRead *.md       set ai formatoptions=tcroqn2 comments=n:> filetype=markdown
       autocmd BufNewFile,BufRead *.markdown set ai formatoptions=tcroqn2 comments=n:> filetype=markdown
     augroup END
 
-
-" Markdown preview to quickly preview markdown files
-  Bundle "git://github.com/maba/vim-markdown-preview.git"
-  map <buffer> <Leader>mp :Mm<CR>
-
-
 " NERDTree for project drawer
-  Bundle "git://github.com/scrooloose/nerdtree.git"
+  Bundle "scrooloose/nerdtree"
     let NERDTreeHijackNetrw = 0
 
     nmap gt :NERDTreeToggle<CR>
@@ -121,7 +103,7 @@
 
 
 " Tabular for aligning text
-  Bundle "git://github.com/godlygeek/tabular.git"
+  Bundle "godlygeek/tabular"
     function! CustomTabularPatterns()
       if exists('g:tabular_loaded')
         AddTabularPattern! symbols         / :/l0
@@ -139,13 +121,8 @@
     " shortcut to align text with Tabular
     map <Leader>a :Tabularize<space>
 
-" ZoomWin to fullscreen a particular buffer without losing others
-  Bundle "git://github.com/vim-scripts/ZoomWin.git"
-    map <Leader>z :ZoomWin<CR>
-
-
 " Unimpaired for keymaps for quicky manipulating lines and files
-  Bundle "git://github.com/tpope/vim-unimpaired.git"
+  Bundle "tpope/vim-unimpaired"
     " Bubble single lines
     nmap <C-Up> [e
     nmap <C-Down> ]e
@@ -156,7 +133,7 @@
 
 
 " Syntastic for catching syntax errors on save
-  Bundle "git://github.com/scrooloose/syntastic.git"
+  Bundle "scrooloose/syntastic"
     let g:syntastic_enable_signs=1
     let g:syntastic_quiet_messages = {'level': 'warning'}
     " syntastic is too slow for haml and sass
@@ -164,10 +141,9 @@
                                \ 'active_filetypes': [],
                                \ 'passive_filetypes': ['haml','scss','sass'] }
 
-
 " gist-vim for quickly creating gists
-  Bundle "git://github.com/mattn/webapi-vim.git"
-  Bundle "git://github.com/mattn/gist-vim.git"
+  Bundle "mattn/webapi-vim"
+  Bundle "mattn/gist-vim"
     if has("mac")
       let g:gist_clip_command = 'pbcopy'
     elseif has("unix")
@@ -179,12 +155,11 @@
 
 
 " gundo for awesome undo tree visualization
-  Bundle "git://github.com/sjl/gundo.vim.git"
+  Bundle "sjl/gundo.vim"
     map <Leader>h :GundoToggle<CR>
 
-
 " rails.vim, nuff' said
-  Bundle "git://github.com/tpope/vim-rails.git"
+  Bundle "tpope/vim-rails"
     map <Leader>oc :Rcontroller<Space>
     map <Leader>ov :Rview<Space>
     map <Leader>om :Rmodel<Space>
@@ -193,9 +168,8 @@
     map <Leader>os :Rstylesheet<Space>
     map <Leader>oi :Rintegration<Space>
 
-
 " surround for adding surround 'physics'
-  Bundle "git://github.com/tpope/vim-surround.git"
+  Bundle "tpope/vim-surround"
     " # to surround with ruby string interpolation
     let g:surround_35 = "#{\r}"
     " - to surround with no-output erb tag
@@ -204,24 +178,37 @@
     let g:surround_61 = "<%= \r %>"
 
 " Clojure Highlighting"
-  Bundle 'paredit.vim'
+  Bundle 'emezeske/paredit.vim'
   let g:paredit_leader= '\'
-  Bundle "git://github.com/tpope/vim-fireplace.git"
-  Bundle "git://github.com/tpope/vim-classpath.git"
-  Bundle "git://github.com/guns/vim-clojure-static.git"
-  Bundle "git@github.com:amdt/vim-niji.git"
+  Bundle "tpope/vim-fireplace"
+  Bundle "tpope/vim-classpath"
+  Bundle "guns/vim-clojure-static"
+  Bundle "amdt/vim-niji"
   autocmd BufNewFile,BufRead *.clj set filetype=clojure
 
-
 " Jade Highlighting"
-  Bundle "git://github.com/digitaltoad/vim-jade.git"
+  Bundle "digitaltoad/vim-jade"
   autocmd BufNewFile,BufRead *.jade set filetype=jade
 
-" Scala Highlighting"
-  Bundle "git://github.com/derekwyatt/vim-scala.git"
-  autocmd BufNewFile,BufRead *.scala set filetype=scala
-
 " Elixir plugin
-  Bundle "git://github.com/elixir-lang/vim-elixir.git"
+  Bundle "elixir-lang/vim-elixir"
     au BufNewFile,BufRead *.ex set filetype=elixir
     au BufNewFile,BufRead *.exs set filetype=elixir
+
+" RagTag
+Bundle 'tpope/vim-ragtag'
+  let g:ragtag_global_maps = 1
+
+" Emmet Plugin
+Bundle "mattn/emmet-vim"
+  let g:user_emmet_install_global = 0
+  autocmd FileType html,css,eruby EmmetInstall
+
+" Easy Motion
+Bundle 'Lokaltog/vim-easymotion'
+  map <Leader> <Plug>(easymotion-prefix)
+
+" Puppet
+Bundle 'rodjek/vim-puppet'
+  au BufNewFile,BufRead *.pp set filetype=puppet
+
