@@ -23,6 +23,9 @@
   nmap gr :e config/routes.rb<cr>
   nmap gm :e Gemfile<cr>
 
+" Open README of any project
+  nmap <Leader>r :e README.md<cr>
+
 " insert blank lines without going into insert mode
   nmap go o<esc>
   nmap gO O<esc>
