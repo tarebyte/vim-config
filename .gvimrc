@@ -27,7 +27,7 @@
   endif
 
 " use a big, pretty font
-  set guifont=Inconsolata\ for\ Powerline:h18
+  set guifont=Inconsolata\ for\ Powerline:h16
 
 " initial window size
   set lines=45 columns=120
