@@ -18,7 +18,7 @@ The Windows version of the Vim configuration uses rake (for installation) git (f
 
 Windows users: be sure to use **RailsInstaller** > **Command Prompt with Ruby and Rails** to perform these installation steps instead of the normal command prompt.
 
-1. `git clone git://github.com/neo/vim-config.git`
+1. `git clone git://github.com/tarebyte/vim-config.git`
 2. `cd vim-config`
 3. `rake` (This will symlink the necessary files to your home directory, asking for permission before clobbering anything.)
 4. `vim` (or in Windows: `gvim`)
@@ -350,13 +350,6 @@ out again using `<C-W> o`
 
 **Customizations**: Binds `<leader>z` to `:ZoomWin`
 
-## Markdown Preview
-
-Markdown preview takes the current buffer, converts the Markdown to
-HTML, and opens it in your default browser.
-
-**Customizations**: Binds `<leader>mp` to this plugin.
-
 ## Other goodies
 
 * `:OpenHtml` - view the current file (or selected lines) in a browser
@@ -376,6 +369,8 @@ Ships with a few additional syntaxes:
 * Coffee Script
 * Erlang
 * Jade
+* ECMAScript 6
+* Handlebars
 
 ## Color schemes
 
@@ -392,5 +387,4 @@ popular color themes](http://www.vi-improved.org/color_sampler_pack/):
 * xoria256
 
 Use `:color vibrantink` to switch to a color scheme.
-
 
