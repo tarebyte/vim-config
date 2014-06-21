@@ -1,4 +1,5 @@
-# Neo Vim Config
+# My Vim Config
+## Forked and Modified from the [Neo Vim Config](https://github.com/neo/vim-config)
 
 You should give it a try.
 
