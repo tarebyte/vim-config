@@ -1,3 +1,6 @@
+# DEPRECIATED
+## I am now keeping my vim config in my [dotfiles](https://github.com/tarebyte/dotfiles)
+
 # My Vim Config
 ## Forked and Modified from the [Neo Vim Config](https://github.com/neo/vim-config)
 
